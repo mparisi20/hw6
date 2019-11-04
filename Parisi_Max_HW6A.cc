@@ -1,8 +1,21 @@
+#include <cstdint>
+#include <cstring>
+#define STB_IMAGE_WRITE_IMPLEMENTATION
+#include "stb_image_write.h"
+
+
 class Bitmap {
 private:
-
+	constexpr static uint32_t w = 800, h = 600;
+	uint32_t pixels[w][h];
+	
 public:
-	Bitmap(uint32_t color) { }
+	Bitmap(uint32_t color)
+	{ 
+		for (uint32_t i = 0; i < h; i++)
+			for (uint32_t j = 0; j < w; j++)
+				pixels[i][j] = color;
+	}
 	
 	void horizLine(int x1, int x2, int y, uint32_t color)
 	{
