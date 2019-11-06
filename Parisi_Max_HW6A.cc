@@ -1,5 +1,5 @@
 // Max Parisi
-// CPE 553-A hwShapes
+// CPE 553-A HW6A
 // Cite: http://members.chello.at/~easyfilter/bresenham.html
 	// https://en.wikipedia.org/wiki/Bresenham's_line_algorithm
 // I pledge my honor that I have abided by the Stevens Honor System.
